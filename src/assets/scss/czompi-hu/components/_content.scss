@@ -1,0 +1,65 @@
+// #region Coloring 
+a {
+    color: var(--color-theme-complement-200);
+}
+
+a:hover,
+a:active {
+    color: var(--color-theme-complement-300);
+}
+
+section[background="dark"] {
+    background-color: var(--color-theme-700);
+    color: #000;
+}
+
+section[background="accent"] {
+    background-color: var(--color-theme-accent-200);
+    color: var(--color-neutral-100);
+}
+
+section[background="complement"] {
+    background-color: var(--color-theme-complement-200);
+    color: var(--color-neutral-100);
+}
+// #endregion
+
+// #region Mobile view 
+.content {
+    padding-block: .75em;
+    flex: 1 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 1em .6em;
+}
+
+section > p,
+section  blockquote {
+    text-align: justify;
+}
+// #endregion
+
+// #region Desktop view 
+@media (min-width: 40em) {
+    .container {
+        width: 95%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    section {
+        border-radius: var(--border-radius);
+        padding: 1em .6em;
+    }
+}
+// #endregion
