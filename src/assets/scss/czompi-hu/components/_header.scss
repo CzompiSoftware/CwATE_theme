@@ -1,34 +1,34 @@
 // #region Coloring
 nav {
-    background-color: var(--color-theme-accent-200);
+    background-color: var(--fp-theme-primary-500);
 }
 
 nav .nav-toggle,
 nav .nav-logo,
 nav .nav-item {
-    color: var(--color-neutral-100);
+    color: var(--fp-theme-light-100);
 }
 
 nav .nav-toggle:hover::before,
 nav .nav-toggle:focus::before {
     background: hsl(0 0% 0% / .1);
-    color: var(--color-neutral-100);
+    color: var(--fp-theme-light-100);
 }
 nav .nav-toggle.active::before,
 nav .nav-toggle:active::before {
     background: hsl(0 0% 0% / .2);
-    color: var(--color-neutral-100);
+    color: var(--fp-theme-light-100);
 }
 nav .nav-item:active,
 nav .nav-item.active,
 nav .nav-item.active:hover {
-    background-color: var(--color-theme-accent-400);
-    color: var(--color-neutral-100);
+    background-color: var(--fp-theme-primary-700);
+    color: var(--fp-theme-light-100);
 }
 nav a.nav-item:hover,
 nav a.nav-item:focus {
-    background-color: var(--color-theme-accent-400);
-    color: var(--color-neutral-100);
+    background-color: var(--fp-theme-primary-700);
+    color: var(--fp-theme-light-100);
 }
 // #endregion
 

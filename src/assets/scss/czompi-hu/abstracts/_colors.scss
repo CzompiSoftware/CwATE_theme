@@ -1,50 +1,90 @@
+@import 'color-variables';
 :root {
-    --border-radius: 1rem;
-    --color-theme-accent-600: var(--color-complementary-a); 
-    --color-theme-accent-400: var(--color-complementary-c);
-    --color-theme-accent-200: var(--color-complementary-b); // base color
+    --border-radius: .4em;
     
-    --color-theme-complement-400: var(--color-complementary-d);
-    --color-theme-complement-300: hsl(49, 89%, 27%);
-    --color-theme-complement-200: var(--color-complementary-e);
-    
-    --color-theme-100: var(--color-light-100);
-    --color-theme-300: var(--color-light-300);
-    --color-theme-500: var(--color-light-500);
-    --color-theme-700: var(--color-light-700);
-    --color-theme-800: var(--color-light-800);
-    --color-theme-900: var(--color-light-900);
-    
-    --color-neutral-100: hsl(219, 47%, 90%);
-    --color-neutral-200: hsl(219, 47%, 80%);
-    --color-neutral-300: hsl(219, 47%, 70%);
-    --color-neutral-400: hsl(239, 74%, 61%);
-    --color-neutral-900: hsl(219, 47%, 10%);
-
-    --color-monochromatic-a: hsl(239, 88%, 48%);
-    --color-monochromatic-b: hsl(239, 47%, 45%);
-    --color-monochromatic-c: hsl(239, 89%, 32%);
-    --color-monochromatic-d: hsl(239, 74%, 61%);
-    --color-monochromatic-e: hsl(239, 89%, 21%);
-
-    --color-complementary-a: hsl(238, 95%, 15%);
-    --color-complementary-b: hsl(239, 79%, 52%);
-    --color-complementary-c: hsl(239, 89%, 32%);
-    --color-complementary-d: hsl(48, 100%, 15%);
-    --color-complementary-e: hsl(49, 89%, 32%);
-
-    // --color-black-coffee: hsl(263, 11%, 24%);
-    // --color-duke-blue: hsl(239, 89%, 32%);
-    // --color-iris: hsl(232, 64%, 54%);
-    // --color-light-steel-blue: hsl(219, 47%, 80%);
-    // --color-light-steel-blue-1: hsl(219, 47%, 90%);
-    // --color-red-crayola: hsl(340, 100%, 50%);
-
-    @for $i from 0 to 9 {
-        --color-light-#{$i+1}00: hsl(263, 11%, #{100-5.5*$i}%);
+    // Theme colors
+    @each $name, $color in $theme-colors {
+        --fp-theme-#{$name}: #{$color};
     }
     
-    @for $i from 0 to 9 {
-        --color-dark-#{$i+1}00: hsl(263, 11%, #{46-5.5*$i}%);
+    @each $name, $color in $primary-colors {
+        --fp-theme-#{$name}: #{$color};
+    }
+
+    @each $name, $color in $secondary-colors {
+        --fp-theme-#{$name}: #{$color};
+    }
+    
+    @each $name, $color in $success-colors {
+        --fp-theme-#{$name}: #{$color};
+    }
+    
+    @each $name, $color in $info-colors {
+        --fp-theme-#{$name}: #{$color};
+    }
+    
+    @each $name, $color in $warning-colors {
+        --fp-theme-#{$name}: #{$color};
+    }
+    
+    @each $name, $color in $danger-colors {
+        --fp-theme-#{$name}: #{$color};
+    }
+    
+    @each $name, $color in $light-colors {
+        --fp-theme-#{$name}: #{$color};
+    }
+    
+    @each $name, $color in $dark-colors {
+        --fp-theme-#{$name}: #{$color};
+    }
+    
+
+    // Colors
+    @each $name, $color in $colors {
+        --fp-color-#{$name}: #{$color};
+    }
+
+    @each $name, $color in $blues {
+        --fp-color-#{$name}: #{$color};
+    }
+    @each $name, $color in $indigos {
+        --fp-color-#{$name}: #{$color};
+    }
+    @each $name, $color in $purples {
+        --fp-color-#{$name}: #{$color};
+    }
+    @each $name, $color in $pinks {
+        --fp-color-#{$name}: #{$color};
+    }
+    @each $name, $color in $reds {
+        --fp-color-#{$name}: #{$color};
+    }
+    @each $name, $color in $oranges {
+        --fp-color-#{$name}: #{$color};
+    }
+    @each $name, $color in $yellows {
+        --fp-color-#{$name}: #{$color};
+    }
+    @each $name, $color in $greens {
+        --fp-color-#{$name}: #{$color};
+    }
+    @each $name, $color in $teals {
+        --fp-color-#{$name}: #{$color};
+    }
+    @each $name, $color in $cyans {
+        --fp-color-#{$name}: #{$color};
+    }
+    @each $name, $color in $grays {
+        --fp-color-#{$name}: #{$color};
+    }
+
+    
+    @for $i from 1 to 9 {
+        --fp-theme-#{$i}00: var(--fp-theme-light-#{$i}00);
+    }
+    
+    @for $i from 1 to 9 {
+        --fp-theme-neutral-#{$i}00: var(--fp-theme-dark-#{$i}00);
     }
 }

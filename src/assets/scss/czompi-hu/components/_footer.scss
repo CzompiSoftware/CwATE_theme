@@ -1,7 +1,7 @@
 // #region Coloring 
 footer {
-    color: var(--color-neutral-100);
-    background-color: var(--color-theme-accent-400);
+    color: var(--fp-theme-neutral-100);
+    background-color: var(--fp-theme-primary-700);
 }
 
 footer > .brand::after {
@@ -17,27 +17,38 @@ footer > .brand::after {
     height: 4em;
 }
 
+footer > .brand:hover:after {
+    filter: brightness(0) saturate(100%) invert(42%) sepia(86%) saturate(409%) hue-rotate(12deg) brightness(99%) contrast(104%);
+}
+
+footer > .brand:focus::after,
+footer > .brand::after:focus,
+footer > .brand:focus::after:focus {
+    outline: 0;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(95%) saturate(1375%) hue-rotate(38deg) brightness(95%) contrast(97%);
+}
+
 footer > .license {
-    color: var(--color-neutral-100);
+    color: var(--fp-theme-500);
     text-align: center;
     width: 100%;
 }
 
 footer > .license:hover,
 footer > .license:active {
-    color: var(--color-theme-complement-200);
+    color: var(--fp-theme-secondary-700);
 }
 
 footer > .social > a {
-    color: var(--color-neutral-100);
+    color: var(--fp-theme-100);
 }
 
 footer > .social > a:hover,
 footer > .social > a:active {
-    color: var(--color-neutral-100);
+    color: var(--fp-theme-100);
 }
 footer > .copyright {
-    background-color: var(--color-theme-accent-600);
+    background-color: var(--fp-theme-primary-900);
 }
 footer > .copyright > span {
     display: block;

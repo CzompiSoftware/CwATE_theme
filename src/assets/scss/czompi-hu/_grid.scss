@@ -1,0 +1,8 @@
+.grid-ish {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    & > * {
+        flex: 1 1 10em;
+    }
+}

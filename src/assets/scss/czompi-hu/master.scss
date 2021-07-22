@@ -1,15 +1,22 @@
-/**
+/*!
  * FlatPage v1.0.0
  * Copyright 2019-2021 Czompi Software
  * Licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) (https://creativecommons.org/licenses/by-nc-nd/4.0/)
  */
 
-@use 'abstracts/fonts';
-@use 'abstracts/colors';
-@use 'components/base';
-@use 'components/content';
-@use 'components/typography';
-@use 'components/header';
-@use 'components/footer';
+@import 'abstracts/functions';
+@import 'abstracts/fonts';
+@import 'abstracts/colors';
 
-@use 'components/dark-mode';
+@import 'base';
+@import 'typography';
+
+@import 'components/alert';
+@import 'components/button';
+@import 'components/card';
+@import 'components/content';
+@import 'components/form';
+@import 'components/footer';
+@import 'components/header';
+
+@import 'dark-mode';

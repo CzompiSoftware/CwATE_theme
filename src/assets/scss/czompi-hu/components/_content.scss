@@ -1,26 +1,32 @@
 // #region Coloring 
 a {
-    color: var(--color-theme-complement-200);
+    color: var(--fp-theme-secondary-200);
 }
 
 a:hover,
 a:active {
-    color: var(--color-theme-complement-300);
+    color: var(--fp-theme-secondary-300);
+}
+
+section {
+    color: var(--fp-theme-neutral-100);
+}
+
+section[background="light"] {
+    background-color: var(--fp-theme-neutral-700);
+    color: var(--fp-theme-100);
 }
 
 section[background="dark"] {
-    background-color: var(--color-theme-700);
-    color: #000;
+    background-color: var(--fp-theme-700);
 }
 
-section[background="accent"] {
-    background-color: var(--color-theme-accent-200);
-    color: var(--color-neutral-100);
+section[background="primary"] {
+    background-color: var(--fp-theme-primary-500);
 }
 
-section[background="complement"] {
-    background-color: var(--color-theme-complement-200);
-    color: var(--color-neutral-100);
+section[background="secondary"] {
+    background-color: var(--fp-theme-secondary-500);
 }
 // #endregion
 
@@ -31,6 +37,7 @@ section[background="complement"] {
 }
 
 a {
+    font-size: 0.75rem;
     text-decoration: none;
 }
 
@@ -40,11 +47,12 @@ a {
 }
 
 section {
+    margin-block: 1em;
     padding: 1em .6em;
 }
 
-section > p,
-section  blockquote {
+section p,
+section blockquote {
     text-align: justify;
 }
 // #endregion
@@ -58,7 +66,7 @@ section  blockquote {
     }
 
     section {
-        border-radius: var(--border-radius);
+        border-radius: .3rem;
         padding: 1em .6em;
     }
 }
