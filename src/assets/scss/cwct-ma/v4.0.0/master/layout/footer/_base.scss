@@ -1,0 +1,30 @@
+footer {
+    // background-color: var(--cwctma-color-theme-200);
+    flex-shrink: 0;
+}
+
+footer > .footer {
+    --nav-radius: .5rem;
+    background-color: var(--cwctma-color-nav-menu-500);
+    padding-block: 1rem;
+    position: relative;
+    border-radius: var(--nav-radius);
+    
+    margin-bottom: 1rem;
+}
+
+// #region Desktop wiew 
+@media (min-width: 40em) {
+    footer {
+        display: block;
+    }
+    
+    // footer > .copyright > span {
+    //     display: inline-block;
+    // }
+    
+    // footer > .copyright > span:not(:last-of-type)::after {
+    //     content: '|';
+    // }
+}
+// #endregion

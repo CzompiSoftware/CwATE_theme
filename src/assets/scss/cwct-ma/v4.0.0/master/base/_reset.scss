@@ -1,20 +1,11 @@
-// #region Coloring
-* {
-    font-family: var(--ff-primary);
-}
-// #endregion
-
-// #region Mobile view
-* {
-    padding: 0;
-    margin: 0;
-}
-html, body {
-    height: 100%;
-}
-
 html {
-    background-color: var(--fp-theme-300);
+    font-family: 'Comfortaa';
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
 body {

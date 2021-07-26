@@ -1,0 +1,48 @@
+
+// scss-docs-start color-variables
+$blue:    #0c57e0 !default;
+$indigo:  #9814f0 !default;
+$purple:  #723bb9 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd5e14 !default;
+$yellow:  #ffb007 !default;
+$green:   #07804d !default;
+$teal:    #0da36a !default;
+$cyan:    #20d2df !default;
+$white:   #FFFFFF !default;
+// scss-docs-end color-variables
+
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white
+) !default;
+// scss-docs-start theme-color-variables
+$primary:       hsl(239, 79%, 52%) !default;
+$secondary:     hsl(49, 89%, 32%) !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+) !default;

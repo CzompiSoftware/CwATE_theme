@@ -1,0 +1,26 @@
+.alert {
+    padding: 1em;
+    margin-block: .5rem;
+    // border-radius: var(--border-radius);
+    border-radius: .2rem;
+    background-color: var(--cwctma-color-light-200);
+    // color: var(--cwctma-color-white-100);
+
+    @each $name, $color in $theme-colors {
+        &.alert-#{$name} {
+            border-left: .4em solid #{$color};
+        }
+        &.alert-#{$name} > h1,
+        &.alert-#{$name} > h2,
+        &.alert-#{$name} > h3,
+        &.alert-#{$name} > h4,
+        &.alert-#{$name} > h5,
+        &.alert-#{$name} > h6 {
+            margin-block-start: 0rem;
+            color: #{$color};
+        }
+        &.alert-#{$name} > *:last-child {
+            margin-block-end: 0rem;
+        }
+    }
+}

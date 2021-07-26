@@ -1,0 +1,15 @@
+.nav.group {
+    font-size: .65rem;
+
+    & .nav-item {
+    }
+
+    & .nav-item > * {
+        border-radius: 0;
+        
+        &:hover {
+        }
+    }
+
+}
+

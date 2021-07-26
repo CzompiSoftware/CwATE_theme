@@ -1,0 +1,31 @@
+:root {
+    --cwctma-color-theme-100: hsl(0, 0%, 16%);
+    --cwctma-color-theme-200: hsl(0, 0%, 26%);
+    --cwctma-color-theme-300: hsl(0, 0%, 36%);
+    --cwctma-color-theme-400: hsl(0, 0%, 46%);
+    --cwctma-color-theme-500: hsl(0, 0%, 56%);
+    --cwctma-color-theme-600: hsl(0, 0%, 66%);
+    --cwctma-color-theme-700: hsl(0, 0%, 76%);
+    --cwctma-color-theme-800: hsl(0, 0%, 86%);
+    --cwctma-color-theme-900: hsl(0, 0%, 96%);
+    
+    --cwctma-color-black-100: hsl(0, 0%, 28%);
+    --cwctma-color-black-200: hsl(0, 0%, 26%);
+    --cwctma-color-black-300: hsl(0, 0%, 24%);
+    --cwctma-color-black-400: hsl(0, 0%, 22%);
+    --cwctma-color-black-500: hsl(0, 0%, 20%);
+    --cwctma-color-black-600: hsl(0, 0%, 18%);
+    --cwctma-color-black-700: hsl(0, 0%, 16%);
+    --cwctma-color-black-800: hsl(0, 0%, 14%);
+    --cwctma-color-black-900: hsl(0, 0%, 12%);
+
+    --cwctma-color-font-primary: hsl(0, 0%, 12%);
+    
+    @for $i from 1 to 10 {
+        --cwctma-color-white-#{$i}00: hsl(0,0%,#{65+5*($i - 1)}%);
+    }
+    
+    @for $i from 1 to 6 {
+        --cwctma-color-nav-#{$i}00: hsl(0,0%,#{20-3*($i - 1)}%);
+    }
+}
