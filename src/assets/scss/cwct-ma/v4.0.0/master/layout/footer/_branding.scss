@@ -4,6 +4,7 @@ footer .branding::after {
     display: block;
     background-image: url('https://cdn.czompisoftware.hu/img/8fbedeb93ec798c622117bf2bfe22abf51f68459/v1.0.0/czompi-logo-white.svg');
     background-size: 10em;
+    filter: brightness(1);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
@@ -13,12 +14,13 @@ footer .branding::after {
 }
 
 footer .branding:hover:after {
-    filter: brightness(0) saturate(100%) invert(42%) sepia(86%) saturate(409%) hue-rotate(12deg) brightness(99%) contrast(104%);
+    // filter: brightness(0) saturate(100%) invert(42%) sepia(86%) saturate(409%) hue-rotate(12deg) brightness(99%) contrast(104%);
+    filter: brightness(.8);
 }
 
 footer .branding:focus::after,
 footer .branding::after:focus,
 footer .branding:focus::after:focus {
     outline: 0;
-    filter: brightness(0) saturate(100%) invert(14%) sepia(95%) saturate(1375%) hue-rotate(38deg) brightness(95%) contrast(97%);
+    filter: brightness(.7);
 }

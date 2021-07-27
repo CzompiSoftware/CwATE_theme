@@ -1,8 +1,9 @@
 .alert {
     padding: 1em;
-    margin-block: .5rem;
+    margin-block: 1.5rem;
     // border-radius: var(--border-radius);
     border-radius: .2rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
     background-color: var(--cwctma-color-light-200);
     // color: var(--cwctma-color-white-100);
 
