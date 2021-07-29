@@ -1,8 +1,13 @@
 footer .buildinfo {
     text-align: center;
     font-size: .9rem;
-    & > *:not(:last-child)::after {
+    & * {
+        display: inline-block;
+    }
+    
+    & *:not(:last-child)::after {
+        padding-inline: .4rem;
         content: '|';
-        color: red;
+        color: var(--cwctma-color-white-200);
     }
 }

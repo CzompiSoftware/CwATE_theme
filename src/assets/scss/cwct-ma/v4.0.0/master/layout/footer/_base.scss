@@ -5,14 +5,14 @@ footer {
 }
 
 footer > .footer {
-    --nav-radius: .5rem;
-    background: var(--cwctma-color-theme-500);
-    background: linear-gradient(0deg, var(--cwctma-color-theme-300) 0%, var(--cwctma-color-theme-500) 100%);
+    --cwctma-theme-nav-radius: .5rem;
+    background: var(--cwctma-theme-footer-background);
+    // background: linear-gradient(0deg, var(--cwctma-color-theme-300) 0%, var(--cwctma-theme-footer-background) 100%);
     box-shadow: 0 0 1rem var(--cwctma-color-theme-100);
 
     padding-block: 1rem;
     position: relative;
-    border-radius: var(--nav-radius);
+    border-radius: var(--cwctma-theme-nav-radius);
     
     margin-bottom: 1rem;
 }

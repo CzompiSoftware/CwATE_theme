@@ -25,7 +25,11 @@
         --cwctma-color-white-#{$i}00: hsl(0,0%,#{65+5*($i - 1)}%);
     }
     
-    @for $i from 1 to 6 {
-        --cwctma-color-nav-#{$i}00: hsl(0,0%,#{20-3*($i - 1)}%);
-    }
+    // @for $i from 1 to 6 {
+    //     --cwctma-color-nav-#{$i}00: hsl(0,0%,#{20-3*($i - 1)}%);
+    // }
+    
+    // --cwctma-nav-background: colors.$nav-menu-500;
+    // --cwctma-nav-hover: colors.$nav-menu-500;
+    // --cwctma-nav-active: colors.$nav-menu-500;
 }

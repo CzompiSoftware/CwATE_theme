@@ -1,13 +1,9 @@
 .nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     // padding-left: 0;
     // margin-bottom: 0;
     // list-style: none;
     background-color: var(--cwctma-color-nav-500);
-    
+
     &.nav-sticky {
 
     }
@@ -31,3 +27,22 @@
 
 }
 
+header > .container {
+    padding-inline: 0;
+}
+
+@media (max-width: 62.5rem) {
+    header > .container {
+        max-width: 100%;
+    }
+}
+@media (min-width: 62.5rem) {
+    
+    .nav {
+        
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}

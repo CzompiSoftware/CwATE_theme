@@ -9,17 +9,3 @@ main {
     padding-block: .75em;
     flex: 1 0 auto;
 }
-
-.container {
-    max-width: 62.5rem;
-    margin: 0 auto;
-}
-
-@media (min-width: 40em) {
-    .container {
-        width: 95%;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-}
