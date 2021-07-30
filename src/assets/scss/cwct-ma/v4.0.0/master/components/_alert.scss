@@ -2,14 +2,14 @@
     padding: 1rem;
     margin-block: 1.5rem;
     // border-radius: var(--border-radius);
-    border-radius: .2rem;
+    border-radius: calc(var(--cwctma-theme-border-radius) / 1);
     box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
     background-color: var(--cwctma-color-light-200);
     // color: var(--cwctma-color-white-100);
 
     @each $name, $color in $theme-colors {
         &.alert-#{$name} {
-            border-left: .4em solid #{$color};
+            border-left: var(--cwctma-theme-border-radius) solid var(--cwctma-color-#{$name});
         }
         &.alert-#{$name} > h1,
         &.alert-#{$name} > h2,
@@ -18,7 +18,7 @@
         &.alert-#{$name} > h5,
         &.alert-#{$name} > h6 {
             margin-block-start: 0rem;
-            color: #{$color};
+            color: var(--cwctma-color-#{$name});
         }
         &.alert-#{$name} > *:last-child {
             margin-block-end: 0rem;

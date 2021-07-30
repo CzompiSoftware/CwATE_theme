@@ -6,14 +6,19 @@
     // @for $i from 1 to 10 {
     //     --cwctma-color-nav-menu-#{$i}00: hsl(214, 84%,#{46-5*($i - 1)}%);
     // }
-    --cwctma-theme-nav-group-background:         hsl(0, 0%, 8%);
-    --cwctma-theme-nav-group-hover:              hsl(0, 0%, 12%);
-    --cwctma-theme-nav-group-active:             hsl(214, 84%,26%);
+    --cwctma-theme-border-radius:                .5rem;
     
-    --cwctma-theme-nav-menu-radius:                .5rem;
-    --cwctma-theme-nav-menu-background:          hsl(214, 84%,26%);
-    --cwctma-theme-nav-menu-hover:               hsl(214, 84%,31%);
-    --cwctma-theme-nav-menu-active:              hsl(214, 84%,21%);
+    --cwctma-theme-link-color:                   #C78200;
+    --cwctma-theme-link-hover:                   #91630D;
     
-    --cwctma-theme-footer-background:            hsl(214, 84%,26%);
+    --cwctma-theme-nav-group-background:         #141414;
+    --cwctma-theme-nav-group-hover:              #1f1f1f;
+    --cwctma-theme-nav-group-active:             #0b3b7a;
+    
+    --cwctma-theme-nav-menu-background:          #0b3b7a;
+    --cwctma-theme-nav-menu-hover:               #0d4691;
+    --cwctma-theme-nav-menu-active:              #093063;
+    
+    --cwctma-theme-footer-background:            #0b3b7a;
+    --cwctma-theme-footer-darker:                #093063;
 }

@@ -1,3 +1,4 @@
+@use '../base/colors';
 @media(prefers-color-scheme:dark) {
 	:root {
 		@for $i from 1 to 10 {
@@ -5,5 +6,10 @@
 		}
 		
 		--cwctma-color-text-primary: hsl(0, 0%, 96%);
+		--cwctma-color-info: #{colors.$cyan};
+		--cwctma-color-warning: #{colors.$yellow};
+		
+		--cwctma-color-text-light: var(--cwctma-color-light-900);
+		--cwctma-color-text-dark: var(--cwctma-color-light-100);
 	}
 }

@@ -1,12 +1,135 @@
+@use '../functions';
+
 a {
-    color: var(--cwctma-color-theme-900);
-    text-decoration: none;
-    cursor: pointer;
+	color: var(--cwctma-theme-link-color);
+	text-decoration: none;
+	cursor: pointer;
 }
-a {
-    color: var(--cwctma-color-complement-500);
+a:hover {
+	color: var(--cwctma-theme-link-hover);
 }
+//
+// Base styles
+//
+
 .btn {
-    border-radius: .5rem;
-    padding: 1rem 4rem;
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	border-radius: var(--cwctma-theme-border-radius);
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+//
+// Alternate buttons
+//
+
+// scss-docs-start btn-variant-loops
+@each $color, $value in $theme-colors {
+	$value_hovfoc: functions.shade($value, 20%);
+	$value_active: functions.shade($value, 40%);
+	$value_shadow: functions.shade($value, 60%);
+	$value_active_border: functions.shade($value, 80%);
+	.btn-#{$color} {
+		color: #fff;
+		background-color: #{$value};
+		border-color: #{$value};
+
+		&:hover {
+			color: #fff;
+			background-color: #{$value_hovfoc};
+			border-color: #{$value_active};
+		}
+
+		.btn-check:focus + &,
+		&:focus {
+			color: #fff;
+			background-color: #{$value_hovfoc};
+			border-color: #{$value_active};
+			box-shadow: 0 0 0 var(--cwctma-theme-border-radius) #{$value_shadow}80;
+		}
+
+		.btn-check:checked + &,
+		.btn-check:active + &,
+		&:active,
+		&.active,
+		&.dropdown-toggle {
+			color: #fff;
+			background-color: #{$value_active};
+			border-color: #{$value_active_border};
+		}
+
+		.btn-check:checked + &:focus,
+		.btn-check:active + &:focus,
+		&:active:focus,
+		&.active:focus,
+		&.dropdown-toggle:focus {
+			box-shadow: 0 0 0 var(--cwctma-theme-border-radius) #{$value_shadow}80;
+		}
+		&:disabled,
+		&.disabled {
+			color: #fff;
+			background-color: #{$value};
+			border-color: #{$value};
+		}
+	}
+}
+// scss-docs-end btn-variant-loops
+
+// scss-docs-start btn-variant-loops
+@each $color, $value in $theme-colors {
+	$value_hovfoc: functions.shade($value, 20%);
+	$value_active: functions.shade($value, 40%);
+	$value_shadow: functions.shade($value, 60%);
+	$value_active_border: functions.shade($value, 80%);
+
+	.btn-outline-#{$color} {
+		color: #{$value};
+		border-color: #{$value};
+
+		&:hover {
+			color: #fff;
+			background-color: #{$value};
+			border-color: #{$value};
+		}
+		.btn-check:focus + &,
+		&:focus {
+			box-shadow: 0 0 0 var(--cwctma-theme-border-radius) #{$value_hovfoc}80;
+		}
+		.btn-check:checked + &,
+		.btn-check:active + &,
+		&:active,
+		&.active,
+		&.dropdown-toggle.show {
+			color: #fff;
+			background-color: #{$value};
+			border-color: #{$value};
+		}
+		.btn-check:checked + &:focus,
+		.btn-check:active + &:focus,
+		&:active:focus,
+		&.active:focus,
+		&.dropdown-toggle.show:focus {
+			box-shadow: 0 0 0 var(--cwctma-theme-border-radius) #{$value_hovfoc}80;
+		}
+		&:disabled,
+		&.disabled {
+			color: #{$value};
+			background-color: transparent;
+		}
+	}
+}
+// scss-docs-end btn-variant-loops

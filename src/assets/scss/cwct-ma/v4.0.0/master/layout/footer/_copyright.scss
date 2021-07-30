@@ -1,12 +1,15 @@
 
 footer .copyright {
-    background-color: var(--cwctma-color-theme-100);
-    // color: var(--cwctma-color-black-900);
+    border-radius: 0 0 var(--cwctma-theme-border-radius) var(--cwctma-theme-border-radius);
+
+    padding-block: calc(.5rem + var(--cwctma-theme-border-radius)) .5rem;
+    margin-top: calc(0rem - var(--cwctma-theme-border-radius));
+    background-color: var(--cwctma-theme-footer-darker);
     color: var(--cwctma-color-text-white);
-    width: 100%;
-    padding: .5em 0;
-    // margin-block-end: .5rem;
-    font-size: small;
+    margin-block-end: .5rem;
     text-align: center;
+    font-size: small;
     display: block;
+    width: 100%;
+    z-index: -1;
 }

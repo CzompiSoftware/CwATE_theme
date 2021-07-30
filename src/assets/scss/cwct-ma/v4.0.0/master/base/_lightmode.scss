@@ -1,3 +1,4 @@
+@use '../base/colors';
 :root {
     --cwctma-color-light-100: hsl(330, 0%, 90%);
     --cwctma-color-light-200: hsl(330, 0%, 80%);
@@ -8,6 +9,12 @@
     --cwctma-color-light-700: hsl(330, 0%, 30%);
     --cwctma-color-light-800: hsl(330, 0%, 20%);
     --cwctma-color-light-900: hsl(330, 0%, 10%);
+    
+    --cwctma-color-info: #{colors.$cyan2};
+    --cwctma-color-warning: #{colors.$yellow2};
+
+    --cwctma-color-text-light: var(--cwctma-color-light-900);
+    --cwctma-color-text-dark: var(--cwctma-color-light-100);
 }
 html {
     background-color: var(--cwctma-color-light-100);

@@ -7,7 +7,7 @@
         background-color: var(--cwctma-theme-nav-group-active) !important;
         padding: .25rem .25rem .125rem .25rem;
         margin: 0 .5rem 0.25rem .5rem;
-        border-radius: .25rem;
+        border-radius: calc(var(--cwctma-theme-border-radius) / 2);
     }
 
     & .nav-item > * {
