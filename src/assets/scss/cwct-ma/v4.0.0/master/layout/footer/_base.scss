@@ -15,13 +15,21 @@ footer .footer {
     // border-radius: var(--cwctma-theme-border-radius) var(--cwctma-theme-border-radius) 0 0;
     border-radius: var(--cwctma-theme-border-radius);
 }
+@media (max-width: 40rem) {
+    footer > .container {
+        padding-inline: 0;
+    }
+}
+
+@media (min-width: 62.5rem) {
+}
 
 // #region Desktop wiew 
-@media (min-width: 40em) {
+@media (min-width: 40rem) {
     footer {
         display: block;
     }
-    
+     
     // footer > .copyright > span {
     //     display: inline-block;
     // }

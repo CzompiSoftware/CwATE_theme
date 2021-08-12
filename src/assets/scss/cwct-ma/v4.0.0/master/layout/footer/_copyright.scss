@@ -6,10 +6,12 @@ footer .copyright {
     margin-top: calc(0rem - var(--cwctma-theme-border-radius));
     background-color: var(--cwctma-theme-footer-darker);
     color: var(--cwctma-color-text-white);
-    margin-block-end: .5rem;
     text-align: center;
     font-size: small;
     display: block;
     width: 100%;
     z-index: -1;
+    @media (min-width: 62.5rem) {
+        margin-block-end: .5rem;
+    }
 }
