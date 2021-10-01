@@ -20,6 +20,15 @@
             margin-block-start: 0rem;
             color: var(--cwctma-color-#{$name});
         }
+        &.alert-#{$name} .text-colored,
+        &.alert-#{$name} a.link-colored {
+            margin-block-start: 0rem;
+            color: var(--cwctma-color-#{$name});
+        }
+        &.alert-#{$name} a:hover.link-colored {
+            margin-block-start: 0rem;
+            color: var(--cwctma-color-#{$name}-darker);
+        }
         &.alert-#{$name} > *:last-child {
             margin-block-end: 0rem;
         }

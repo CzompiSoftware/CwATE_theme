@@ -6,7 +6,7 @@ footer .buildinfo {
     }
     
     & *:not(:last-child)::after {
-        padding-inline: .4rem;
+        padding-inline: .4rem .1rem;
         content: '|';
         color: var(--cwctma-color-white-200);
     }

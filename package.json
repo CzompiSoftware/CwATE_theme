@@ -10,9 +10,7 @@
   "author": "Czompi Software",
   "license": "CC BY-NC-ND 4.0",
   "devDependencies": {
+    "sass": "^1.37.5",
     "scss": "^0.2.4"
-  },
-  "dependencies": {
-    "sass": "^1.36.0"
   }
 }

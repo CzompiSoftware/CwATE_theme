@@ -1,4 +1,5 @@
-
+@use '../base/colors';
+@use '../functions';
 body {
     display: flex;
     flex-direction: column;
@@ -12,4 +13,13 @@ main {
 
 .w-100 {
     width: 100% !important;
+}
+
+@each $name, $color in $theme-colors {
+    .text-#{$name} {
+        color: var(--cwctma-color-#{$name});
+    }
+    a.text-#{$name}:hover {
+        color: shade($color, 20%);
+    }
 }

@@ -1,3 +1,13 @@
+@use '../functions';
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+    
+    @if $index {
+      @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+    
+    @return $string;
+  }
 :root {
     --cwctma-color-theme-100: hsl(0, 0%, 16%);
     --cwctma-color-theme-200: hsl(0, 0%, 26%);
@@ -27,6 +37,12 @@
     
     @each $name, $color in $theme-colors {
         --cwctma-color-#{$name}: #{$color};
+        
+	    @if("#{type-of($color)}" == "color") {
+            --cwctma-color-#{$name}-darker: #{functions.shade($color, 20%)};
+        } @else {
+            --cwctma-color-#{$name}-darker: #{str-replace(str-replace("#{$color}", '-200', '-300'), '-100', '-200')};
+        }
     }
 
     // @for $i from 1 to 6 {
