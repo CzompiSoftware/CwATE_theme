@@ -39,3 +39,9 @@ footer .footer {
     // }
 }
 // #endregion
+
+@media print {    
+    footer {
+        display: none !important;
+    }
+}

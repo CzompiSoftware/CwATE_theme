@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "sass --watch src/assets/scss:dist/css"
+    "dev": "sass --watch src/:dist/"
   },
   "keywords": [],
   "author": "Czompi Software",
   "license": "CC BY-NC-ND 4.0",
   "devDependencies": {
-    "sass": "^1.37.5",
+    "sass": "^1.45.1",
     "scss": "^0.2.4"
   }
 }

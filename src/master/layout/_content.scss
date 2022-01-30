@@ -1,5 +1,8 @@
 @use '../base/colors';
 @use '../functions';
+html {
+    scroll-behavior: smooth;
+}
 body {
     display: flex;
     flex-direction: column;

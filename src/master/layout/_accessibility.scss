@@ -1,0 +1,17 @@
+a.skip-navigation {
+    position: absolute;
+    transform: translateY(-120%);
+    transition: transform 325ms ease-in;
+    left: 1rem;
+    padding: .5rem .75rem;
+    background-color: var(--cwctma-theme-nav-menu-hover);
+    border-radius: 0 0 var(--cwctma-theme-border-radius) var(--cwctma-theme-border-radius);
+    color: var(--cwctma-color-white-500);
+    &:focus {
+        top: 1.65rem;
+        transform: translateY(0);
+    }
+    &:focus:hover {
+        background-color: var(--cwctma-theme-nav-menu-active);
+    }
+}

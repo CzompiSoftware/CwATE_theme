@@ -1,0 +1,40 @@
+div.card-container {
+    & > div.card {
+        padding: 1rem;
+        margin-block: 1.5rem;
+        // border-radius: var(--border-radius);
+        border-radius: calc(var(--cwctma-theme-border-radius) / 1);
+        box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+        background-color: var(--cwctma-color-light-200);
+        // color: var(--cwctma-color-white-100);
+    
+        @each $name, $color in $theme-colors {
+            &.card-#{$name} {
+                border-left: var(--cwctma-theme-border-radius) solid var(--cwctma-color-#{$name});
+            }
+            &.card-#{$name} > h1,
+            &.card-#{$name} > h2,
+            &.card-#{$name} > h3,
+            &.card-#{$name} > h4,
+            &.card-#{$name} > h5,
+            &.card-#{$name} > h6 {
+                color: var(--cwctma-color-#{$name});
+            }
+            &.card-#{$name} .text-colored,
+            &.card-#{$name} a.link-colored {
+                color: var(--cwctma-color-#{$name});
+            }
+            &.card-#{$name} a:hover.link-colored {
+                color: var(--cwctma-color-#{$name}-darker);
+            }
+            &.card-#{$name} > *:first-child {
+                margin-block-start: 0rem;
+                margin-top: 0rem;
+            }
+            &.card-#{$name} > *:last-child {
+                margin-block-end: 0rem;
+                margin-bottom: 0rem;
+            }
+        }
+    }
+}
