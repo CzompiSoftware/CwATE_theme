@@ -11,9 +11,13 @@ footer .footer {
     // box-shadow: 0 0 1rem var(--cwctma-color-theme-100);
 
     padding-block: 1rem;
+    padding-inline: 0;
     position: relative;
     // border-radius: var(--cwctma-theme-border-radius) var(--cwctma-theme-border-radius) 0 0;
     border-radius: var(--cwctma-theme-border-radius);
+}
+footer > .container {
+    padding-inline: 0;
 }
 @media (max-width: 40rem) {
     footer > .container {

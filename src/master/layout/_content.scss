@@ -2,6 +2,7 @@
 @use '../functions';
 html {
     scroll-behavior: smooth;
+    background-color: var(--cwctma-color-light-100);
 }
 body {
     display: flex;
@@ -10,7 +11,10 @@ body {
     position: relative;
 }
 main {
-    padding-block: .75em;
+    // padding-block: .75em;
+    background-color: var(--cwctma-color-light-200);
+    padding-block: calc(var(--cwctma-theme-border-radius) + .75rem);
+    margin-block: calc(var(--cwctma-theme-border-radius) * -1);
     flex: 1 0 auto;
 }
 
