@@ -1,18 +1,11 @@
 :root {
-    // @for $i from 1 to 10 {
-    //     --cwctma-color-theme-#{$i}00: hsl(214, 84%,#{16+10*($i - 1)}%);
-    // }
-    
-    // @for $i from 1 to 10 {
-    //     --cwctma-color-nav-menu-#{$i}00: hsl(214, 84%,#{46-5*($i - 1)}%);
-    // }
     --cwctma-theme-border-radius:                .5rem;
     
     --cwctma-theme-link-color:                   #C78200;
     --cwctma-theme-link-hover:                   #91630D;
     
-    --cwctma-theme-nav-group-background:         #141414;
-    --cwctma-theme-nav-group-hover:              #1f1f1f;
+    --cwctma-theme-nav-group-background:         #0d0d0d;
+    --cwctma-theme-nav-group-hover:              #171717;
     --cwctma-theme-nav-group-active:             #0b3b7a;
     
     --cwctma-theme-nav-menu-background:          #0b3b7a;
