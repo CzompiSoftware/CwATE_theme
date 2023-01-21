@@ -1,5 +1,6 @@
+
 .nav.menu {
-    
+
     color: var(--cwctma-color-white-900);
     background-color: var(--cwctma-theme-nav-menu-background);
     
@@ -53,10 +54,10 @@
 
     .nav-mobile {
         float: right;
-
+        top: -1em;
         vertical-align: middle;
-        width: 2rem;
-        height: 2rem;
+        width: 64px;
+        height: 64px;
         position: relative;
         
         &::after {
@@ -66,17 +67,22 @@
             font-weight: normal !important;
             font-size: 1.5rem;
             content: "\f4eb";
-            padding: .25rem;
+            padding: 1.25rem;
+            color: white;
         }
         &:hover {
+            color: white;
             background-color: var(--cwctma-theme-nav-menu-hover);
         }
     }
 
-    @media (min-width: 62.5rem) {
+    @media (max-width: 62.5rem) {
+        padding-block: 1em;
+    }
 
+    @media (min-width: 62.5rem) {
+        padding-block: 1em;
         --cwctma-theme-nav-menu-radius: .5rem;
-        padding-block: 1rem;
         position: relative;
         border-radius: 0 0 var(--cwctma-theme-border-radius) var(--cwctma-theme-border-radius);
         

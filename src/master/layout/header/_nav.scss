@@ -32,9 +32,19 @@ header > .container {
 }
 
 @media (max-width: 62.5rem) {
-    // header > .container {
+    .container {
+        max-width: unset !important;
+        padding: unset !important;
+    }
     header > .container {
         max-width: 100%;
+    }
+    .nav {
+        
+        & .nav-item > * {
+            padding: 1.5rem 1rem;
+            border-radius: unset;
+        }
     }
 }
 @media (min-width: 62.5rem) {
@@ -45,5 +55,6 @@ header > .container {
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        
     }
 }
