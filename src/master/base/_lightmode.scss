@@ -1,13 +1,13 @@
 @use '../base/colors';
 :root {
-    --cwctma-color-light-100: hsl(330, 0%, 90%);
-    --cwctma-color-light-200: hsl(330, 0%, 80%);
-    --cwctma-color-light-300: hsl(330, 0%, 70%);
-    --cwctma-color-light-400: hsl(330, 0%, 60%);
-    --cwctma-color-light-500: hsl(330, 0%, 50%);
-    --cwctma-color-light-600: hsl(330, 0%, 40%);
-    --cwctma-color-light-700: hsl(330, 0%, 30%);
-    --cwctma-color-light-800: hsl(330, 0%, 20%);
+    --cwctma-color-light-100: hsl(330, 0%, 100%);
+    --cwctma-color-light-200: hsl(330, 0%, 95%);
+    --cwctma-color-light-300: hsl(330, 0%, 90%); // unused
+    --cwctma-color-light-400: hsl(330, 0%, 85%); // unused
+    --cwctma-color-light-500: hsl(330, 0%, 50%); // unused
+    --cwctma-color-light-600: hsl(330, 0%, 40%); // unused
+    --cwctma-color-light-700: hsl(330, 0%, 30%); // unused
+    --cwctma-color-light-800: hsl(330, 0%, 20%); // unused
     --cwctma-color-light-900: hsl(330, 0%, 10%);
     
     --cwctma-color-info: #{colors.$cyan2};

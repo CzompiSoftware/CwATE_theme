@@ -1,10 +1,10 @@
 {
   "name": "cwct-ma",
-  "version": "4.0.2",
+  "version": "4.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "sass --watch src/:dist/css/cwct-ma/v4.0.2/"
+    "dev": "sass --watch src/:dist/css/cwct-ma/v4.1.0/"
   },
   "keywords": [],
   "author": "Czompi Software",
