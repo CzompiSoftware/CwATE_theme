@@ -5,11 +5,13 @@
 		--cwctma-color-light-200: hsl(0, 0%, 5%);
 		--cwctma-color-light-300: hsl(0, 0%, 9%);
 		--cwctma-color-light-400: hsl(0, 0%, 15%);
+
 		--cwctma-color-light-500: hsl(0, 0%, 19%);
-		--cwctma-color-light-600: hsl(0, 0%, 21%);
-		--cwctma-color-light-700: hsl(0, 0%, 23%);
-		--cwctma-color-light-800: hsl(0, 0%, 25%);
-		--cwctma-color-light-900: hsl(0, 0%, 27%);
+
+		--cwctma-color-light-600: hsl(0, 0%, 85%);
+		--cwctma-color-light-700: hsl(0, 0%, 90%);
+		--cwctma-color-light-800: hsl(0, 0%, 95%);
+		--cwctma-color-light-900: hsl(0, 0%, 100%);
 		
 		--cwctma-color-text-primary: hsl(0, 0%, 96%);
 		--cwctma-color-info: #{colors.$cyan};

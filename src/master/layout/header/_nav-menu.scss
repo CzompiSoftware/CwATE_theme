@@ -4,7 +4,7 @@
     color: var(--cwctma-color-white-900);
     background-color: var(--cwctma-theme-nav-menu-background);
     
-    & .nav-item > * {
+    & .nav-item:not(.disabled) > * {
         color: var(--cwctma-color-white-500);
         
         &:hover {
