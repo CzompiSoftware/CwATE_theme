@@ -20,7 +20,7 @@
         color: var(--cwctma-color-white-900);
         border-radius: var(--cwctma-theme-border-radius);
 
-        &:hover {
+        &:not(.disabled):hover {
             background-color: var(--cwctma-color-nav-300);
         }
     }
