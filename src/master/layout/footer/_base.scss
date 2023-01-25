@@ -6,6 +6,7 @@ footer {
 
 footer .footer {
     --cwctma-theme-nav-radius: .5rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
     background: var(--cwctma-theme-footer-background);
     // background: linear-gradient(0deg, var(--cwctma-color-theme-300) 0%, var(--cwctma-theme-footer-background) 100%);
     // box-shadow: 0 0 1rem var(--cwctma-color-theme-100);
