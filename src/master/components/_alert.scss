@@ -35,4 +35,33 @@
             margin-bottom: 0rem;
         }
     }
+    
+    @each $name, $color in $compiler-colors {
+        &.alert-#{$name} {
+            border-left: var(--cwctma-theme-border-radius) solid var(--cwctma-color-#{$name});
+        }
+        &.alert-#{$name} > h1,
+        &.alert-#{$name} > h2,
+        &.alert-#{$name} > h3,
+        &.alert-#{$name} > h4,
+        &.alert-#{$name} > h5,
+        &.alert-#{$name} > h6 {
+            color: var(--cwctma-color-#{$name});
+        }
+        &.alert-#{$name} .text-colored,
+        &.alert-#{$name} a.link-colored {
+            color: var(--cwctma-color-#{$name});
+        }
+        &.alert-#{$name} a:hover.link-colored {
+            color: var(--cwctma-color-#{$name}-darker);
+        }
+        &.alert-#{$name} > *:first-child {
+            margin-block-start: 0rem;
+            margin-top: 0rem;
+        }
+        &.alert-#{$name} > *:last-child {
+            margin-block-end: 0rem;
+            margin-bottom: 0rem;
+        }
+    }
 }

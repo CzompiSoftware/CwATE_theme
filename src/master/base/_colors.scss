@@ -5,6 +5,7 @@ $indigo:  #9814f0 !default;
 $purple:  #723bb9 !default;
 $pink:    #d63384 !default;
 $red:     #dc3545 !default;
+$darkred: #85363d !default;
 $orange:  #fd5e14 !default;
 $yellow:  #ffb007 !default;
 $yellow2: #d18f00 !default; //darker
@@ -51,4 +52,10 @@ $theme-colors: (
 //   "dark":       $dark
 ) !default;
 
+$compiler-colors: (
+  "xmdcscmp-info": $info,
+  "xmdcscmp-warning": $warning,
+  "xmdcscmp-error": $danger,
+  "xmdcscmp-fatal": $darkred
+) !default;
 $nav-menu-500: red;

@@ -45,6 +45,16 @@
             --cwctma-color-#{$name}-darker: #{str-replace(str-replace("#{$color}", '-200', '-300'), '-100', '-200')};
         }
     }
+    
+    @each $name, $color in $compiler-colors {
+        --cwctma-color-#{$name}: #{$color};
+        
+	    @if("#{type-of($color)}" == "color") {
+            --cwctma-color-#{$name}-darker: #{functions.shade($color, 20%)};
+        } @else {
+            --cwctma-color-#{$name}-darker: #{str-replace(str-replace("#{$color}", '-200', '-300'), '-100', '-200')};
+        }
+    }
 
     // @for $i from 1 to 6 {
     //     --cwctma-color-nav-#{$i}00: hsl(0,0%,#{20-3*($i - 1)}%);
